@@ -28,7 +28,7 @@ def download_fashion_mnist(root_dir, out_dir):
         'x_test': fashion_mnist_testset.data,
         'y_test': fashion_mnist_testset.targets
     }
-    np.savez_compressed(os.path.join(out_dir, 'fashion_mnist_data.npz'), **fashion_data)
+    np.savez_compressed(os.path.join(out_dir, 'fashion_mnist.npz'), **fashion_data)
 
 
 if __name__ == '__main__':
